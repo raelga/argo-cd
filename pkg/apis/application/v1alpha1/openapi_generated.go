@@ -1273,7 +1273,7 @@ func schema_pkg_apis_application_v1alpha1_Cluster(ref common.ReferenceCallback) 
 					},
 					"namespaces": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Holds list of namespaces which are accessible in that cluster. Cluster level resources would be ignored if namespace list is not empty.",
+							Description: "Holds list of comma-separated namespaces which are accessible in that cluster. Cluster level resources would be ignored if namespace list is not empty.",
 							Type:        []string{"array"},
 							Items: &spec.SchemaOrArray{
 								Schema: &spec.Schema{
